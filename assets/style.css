@@ -1,0 +1,92 @@
+
+body{
+    font-family: sans-serif;
+    margin:0;
+    padding:0;
+    background-color:lavender;
+}
+header{
+     background-color: lavender;
+    border-bottom:6px solid red;
+    width:100%;
+    padding-top: 5px;
+    text-align: right;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 0 20px 10px;
+
+}
+
+
+ a{
+     color:red;
+
+ }
+
+h2{ 
+    
+    padding-left: 30px; 
+    width:fit-content;
+}
+
+
+
+.image{
+    height:300px;
+    width:300px;
+    padding-left: 30px;
+}
+
+.row  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin:0px ;
+  }
+  .justify{
+      justify-content: space-around;
+  }
+  .banner{
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width:100%;
+    margin: 0px;
+    padding:0px;
+    border-bottom: 6px solid red;
+}
+
+ .about-me,.projects,.contacts{
+    display: flex;
+    min-height: 100%;
+    padding: 20px;
+  }
+ .heading{
+     padding: 30px;
+     border-right: 5px solid red;
+     align-items: center;
+     
+ }
+ 
+
+  p{
+      height:100px;
+      margin-left:15px;
+      background-color: ivory;
+      border: 3px solid red;
+      border-radius: 5px;
+      font-size: 20px;
+  }
+  footer nav ul li{
+      padding: 0px 20px 15px 15px;
+      list-style: none;
+      display: inline;
+      text-decoration: none;
+  }
+  footer nav ul li a{
+      color: black;
+  }
