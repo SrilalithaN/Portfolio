@@ -1,18 +1,26 @@
+:root {
+  --blue: blue;
+  --sans: font-family: 'Source Sans Pro', sans-serif;
+}
 body {
-  display: flex;
-  flex-direction: column;
-  font-family: sans-serif;
+  font-family: var(--sans);
   margin: 0;
   padding: 0;
   background-color: lavender;
 }
+
+/*setting the header and banner to flex*/
+header, .banner{
+    display: flex;
+    justify-content: flex-end;
+}
 header {
-  display: flex;
+  
   background-color: lavender;
-  border-bottom: 6px solid red;
+  border-bottom: 6px solid var(--blue);
   width: 100%;
   padding-top: 5px;
-  justify-content: flex-end;
+ 
 }
 
 header nav ul li {
@@ -20,33 +28,13 @@ header nav ul li {
   display: inline;
   padding: 0 20px 10px;
 }
-
-a {
-  color: red;
+a:hover,footer ul li:hover{
+    border:1px var(--blue) solid;
+    padding:5px;
 }
 
-h2 {
-  padding-left: 30px;
-  width: fit-content;
-}
-
-.image {
-  height: 300px;
-  width: 300px;
-  padding-left: 30px;
-}
-
-.column {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0px;
-}
-/*.justify {
-  justify-content: space-around;
-}*/
 .banner {
-  display: flex;
+  
   background-image: url(./images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,49 +42,99 @@ h2 {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  border-bottom: 6px solid red;
+  border-bottom: 6px solid var(--blue);
+  align-items: flex-end;/*positining the banner to left-corner of banner*/
+  
+}
+/*using css-selectors to select direct descendants*/
+figure>h3{
+  font-family: "Lobster", cursive;
+  font-size: 25px;
 }
 
-.about-me,
-.projects,
-.contacts {
+
+/*styling of main part*/
+
+.row {
   display: flex;
-  min-height: 100%;
-  padding: 20px;
-}
-.heading {
-  padding-left: 30px;
-  border-right: 5px solid red;
-  align-items: center;
-  width: 150px;
-}
+  flex-direction: row;}
 
+  .projects{
+  flex-wrap: wrap;
+}
+/* styling the about-me and description*/
 p {
+
   height: 200px;
   width: 300px;
   margin-left: 300px;
   background-color: ivory;
-  border: 3px solid red;
+  border: 3px solid var(--blue);
   border-radius: 5px;
   font-size: 20px;
   text-align: center;
   padding-top: 30px;
+  margin-bottom: 100px;
 }
-footer nav ul li {
+/*styling the projects part*/
+
+
+/*positioning titles of project at centre of images*/
+ h2{
+  margin:0px;
+  position:relative;
+  bottom: 40px;
+  left: 200px;
+  height:50px; 
+}
+
+.heading-3{
+    position: relative;
+    bottom: 40px;
+    left: 600px;
+    height:50px;
+}
+
+.image,.image-3 {
+
+  height: 300px;
+  width: 300px;
+  border: lightskyblue solid 2px;
+  margin-bottom:60px;
+  z-index: 1;
+
+}
+.image-3{
+    position:relative;
+    left: 400px;
+}
+.image:hover,.image-3:hover{
+    transform: scale(1.5);
+    z-index: 2;
+}
+.heading {
+ padding-left: 30px;
+  border-right: 5px solid var(--blue);
+  width: 150px;
+}
+
+
+/*styling the footer part*/
+
+footer ul {
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height:200px;
+}
+footer ul li {
   padding: 0px 20px 15px 15px;
   list-style: none;
   display: inline-flex;
   text-decoration: none;
-  justify-items: flex-end;
+  text-align: center;
+  font-size: 30px;
 }
-footer nav ul li a {
+footer ul li a {
   color: black;
-}
-footer nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-footer .heading {
-  flex-direction: row;
 }
