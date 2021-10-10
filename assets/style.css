@@ -149,11 +149,26 @@ footer {
 .social {
   display: flex;
   justify-content: space-around;
-  font-size: 1.5rem;
-  font-family: var(--poppins);
+  font-size: 5rem;
 }
-.social span {
-  padding: 2rem;
+
+/* Style all font awesome icons */
+.fa {
+  border-radius: 5%;
+  padding: 0.5rem;
+  font-size: 3rem;
+  width: 4rem;
+  text-align: center;
+  text-decoration: none;
+}
+.fa-linkedin,
+.fa-github,
+.fa-envelope {
+  background: #007bb5;
+  color: white;
+}
+.fa:hover {
+  color: salmon;
 }
 .copy p {
   text-align: center;
