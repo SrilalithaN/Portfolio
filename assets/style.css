@@ -1,10 +1,15 @@
 /* general styles */
+:root {
+  --sans: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: var(--sans);
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  font-size: 62.5%;
 }
 
 .container {
@@ -14,18 +19,18 @@ body {
 
 #profile {
   border-radius: 50%;
-  height: 250px;
+  height: 15rem;
   border: blue 5px solid;
 }
 img {
   height: auto;
 }
 h1 {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 2rem;
 }
 
 /* nav bar */
@@ -38,6 +43,9 @@ nav ul {
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style-type: none;
+  font-size: 2rem;
+  font-family: var(--poppins);
+  font-weight: bold;
 }
 
 nav li {
@@ -58,7 +66,7 @@ nav a:hover {
 header {
   background: linear-gradient(180deg, rgb(255, 255, 255), rgb(205, 237, 254));
   font-size: 25px;
-  padding: 15% 10%;
+  padding: 3rem, 5rem;
   border-bottom: blue solid 5px;
 }
 
@@ -87,15 +95,23 @@ header h2 span:hover {
 
 /* about me section */
 .about {
+  /* flex: 1 1 10rem;
+  flex-wrap: wrap; */
+  height: 100%;
   background-color: lavender;
   background-size: cover;
   background-attachment: fixed;
   border-bottom: blue solid 5px;
+  font-size: 1.5rem;
+  font-family: var(--sans);
 }
 
 /* my work  */
 .work {
   background-color: #bdd5ff;
+  font-size: 1.5rem;
+  font-family: var(--sans);
+  border-bottom: blue solid 5px;
 }
 
 .work-items {
@@ -130,26 +146,30 @@ header h2 span:hover {
 /* footer */
 .contact {
   background-color: lavender;
-  width: 100%;
   border: blue 5px solid;
   border-radius: 30px;
+  margin: 3rem;
 }
 .social {
   display: flex;
   justify-content: space-around;
+  font-size: 1.5rem;
+  font-family: var(--poppins);
 }
 .social span {
-  padding: 30px;
+  padding: 20px;
 }
 .copy p {
   text-align: center;
+  font-size: 1.5rem;
+  font-family: var(--poppins);
 }
 /*making website responsive*/
 
 @media screen and (max-width: 685px) {
   .contact {
     width: 50%;
-    margin-left: 50px;
+    margin-left: 2rem;
   }
   .social {
     display: block;
