@@ -4,7 +4,7 @@
   --poppins: "Poppins", sans-serif;
 }
 body {
-  font-family: var(--sans);
+  font-family: var(--poppins);
   width: 100%;
   height: 100%;
   padding: 0;
@@ -17,19 +17,13 @@ body {
   text-align: center;
 }
 
-#profile {
-  border-radius: 50%;
-  height: 15rem;
-  border: white 5px solid;
-}
-img {
-  height: auto;
-}
 h1 {
+  font-family: var(--sans);
   font-size: 3rem;
 }
 
 h2 {
+  font-family: var(--sans);
   font-size: 2rem;
 }
 
@@ -81,27 +75,41 @@ header h1 span {
 header h1 span:hover {
   color: palevioletred;
 }
-header h2 span {
-  color: darkblue;
-  font-family: "lobster", cursive;
-  font-size: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-header h2 span:hover {
-  color: palevioletred;
-}
 
 /* about me section */
+.profile-img {
+  border-radius: 50%;
+  height: 15rem;
+  border: white 5px solid;
+  align-self: center;
+}
+/* img {
+  height: auto;
+} */
 .about {
+  display: flex;
+  padding-top: 0.5rem;
   height: 100%;
   background-color: lavender;
   background-size: cover;
   background-attachment: fixed;
   border-bottom: white solid 5px;
   font-size: 1.5rem;
-  font-family: var(--sans);
+  justify-content: center;
+}
+.about-me {
+  position: relative;
+  left: 10rem;
+}
+.description {
+  flex: 1 1 100rem;
+  flex-wrap: wrap;
+  padding-top: 0rem;
+  padding-left: 15rem;
+  padding-right: 0.3rem;
+  font-family: var(--poppins);
+  /* font-size: 2rem; */
+  line-height: 3rem;
 }
 
 /* my work  */
@@ -122,20 +130,22 @@ header h2 span:hover {
 .work-items img {
   margin-bottom: 0.2rem;
   border-radius: 10%;
-  /* height: auto; */
+  height: auto;
 }
 
 .project {
   padding: 1rem;
   background-color: rgb(238, 236, 236);
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
   border: white 5px solid;
   border-radius: 10%;
-  /* width: 50%; */
+  width: 50%;
+  height: 70%;
 }
 
 .project img {
   width: 100%;
+  height: 40%;
   filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
 }
 .project:hover {
@@ -175,6 +185,33 @@ footer {
   font-size: 1.5rem;
   font-family: var(--poppins);
 }
+.tech-used {
+  font-family: var(--sans);
+  font-size: 1rem;
+  /* color: rgba(0, 0, 0, 0.3); */
+  color: rgb(64, 25, 70);
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  font-family: var(--poppins);
+  font-weight: 900;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  padding: 5px 10px;
+  margin: 15px 10px 0 0;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
 /*making website responsive*/
 
 @media screen and (max-width: 685px) {
