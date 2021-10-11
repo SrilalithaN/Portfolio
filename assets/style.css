@@ -215,12 +215,48 @@ footer {
 /*making website responsive*/
 
 @media screen and (max-width: 685px) {
+  html {
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+  }
   .contact {
-    width: 50%;
-    margin-left: 2rem;
+    width: auto;
   }
   .social {
     display: block;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav li {
+    padding: 0.5rem;
+  }
+  .about {
+    display: block;
+    text-align: center;
+  }
+  .about-me {
+    position: static;
+    margin: 1rem auto;
+  }
+
+  .description {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    padding: 1rem;
+    background-color: rgb(238, 236, 236);
+    margin-bottom: 10rem;
+  }
+
+  .project img {
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
