@@ -81,12 +81,13 @@ header h1 span:hover {
   border-radius: 50%;
   height: 15rem;
   border: white 5px solid;
-  align-self: center;
+  display: block;
+  position: relative;
+  top: 10rem;
 }
 
 .about {
   display: flex;
-
   padding-top: 0.5rem;
   height: 50%;
   background-color: lavender;
@@ -221,6 +222,16 @@ footer {
     padding: 1rem;
   }
 }
+@media screen and (max-width: 616px) {
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav li {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
 
 @media screen and (max-width: 685px) {
   html {
@@ -249,6 +260,10 @@ footer {
   nav li {
     padding: 0.1rem;
   } */
+  .profile-img {
+    position: static;
+    margin-left: 10rem;
+  }
   .about {
     display: block;
     text-align: center;
@@ -291,8 +306,12 @@ footer {
   }
   .about-me {
     position: static;
-    margin-left: 2rem;
+    margin-left: 4rem;
 
     margin-bottom: 1.5rem;
+  }
+  .profile-img {
+    position: static;
+    margin-left: 4rem;
   }
 }
