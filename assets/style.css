@@ -83,13 +83,12 @@ header h1 span:hover {
   border: white 5px solid;
   align-self: center;
 }
-/* img {
-  height: auto;
-} */
+
 .about {
   display: flex;
+
   padding-top: 0.5rem;
-  height: 100%;
+  height: 50%;
   background-color: lavender;
   background-size: cover;
   background-attachment: fixed;
@@ -109,7 +108,7 @@ header h1 span:hover {
   padding-right: 0.3rem;
   font-family: var(--poppins);
   /* font-size: 2rem; */
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 /* my work  */
@@ -213,6 +212,15 @@ footer {
 }
 
 /*making website responsive*/
+@media screen and (max-width: 880px) {
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav li {
+    padding: 1rem;
+  }
+}
 
 @media screen and (max-width: 685px) {
   html {
@@ -226,13 +234,21 @@ footer {
   .social {
     display: block;
   }
-  nav {
+  /* nav {
     display: flex;
     justify-content: flex-end;
+  } */
+  /* nav li {
+    padding: 0.5rem;
+  } */
+  /* nav ul {
+    display: list-item;
+    text-align: right;
+    margin-right: 1rem;
   }
   nav li {
-    padding: 0.5rem;
-  }
+    padding: 0.1rem;
+  } */
   .about {
     display: block;
     text-align: center;
@@ -259,6 +275,7 @@ footer {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 992px) {
   .project {
     display: flex;
@@ -271,5 +288,11 @@ footer {
 
   .project img {
     width: 100%;
+  }
+  .about-me {
+    position: static;
+    margin-left: 2rem;
+
+    margin-bottom: 1.5rem;
   }
 }
