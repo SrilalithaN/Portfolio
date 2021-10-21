@@ -6,7 +6,7 @@
 
 ## INTRODUCTION
 
-Hello Developers! MY name is Srilalitha. I am currently learning full-stack web development from Monash Bootcamp and looking to start a career in web-development soon!
+Hello Developers! My name is Srilalitha. I have done full-stack web development from Monash Bootcamp and I am ready to start a career in web-development!
 I have created a Portfolio Website to showcase my work.
 
 # SKILLS
